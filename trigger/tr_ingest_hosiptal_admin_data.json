@@ -1,0 +1,24 @@
+{
+	"name": "tr_ingest_hosiptal_admin_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_ecdc_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2022-10-24T18:43:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
